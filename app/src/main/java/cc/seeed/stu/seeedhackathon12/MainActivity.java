@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton imageButton8;
     private ImageButton imageButton9;
 
-    private String mNumber = "smsto://13425171053";
+    private String mNumber = "smsto:15875567204";
 
 
     @Override
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         imageButton6 = (ImageButton) findViewById(R.id.imageButton_6);
         imageButton7 = (ImageButton) findViewById(R.id.imageButton_7);
         imageButton8 = (ImageButton) findViewById(R.id.imageButton_8);
-        imageButton9 = (ImageButton) findViewById(R.id.imageButton_8);
+        imageButton9 = (ImageButton) findViewById(R.id.imageButton_9);
 
         imageButton1.setOnClickListener(new MyOnClickListener());
         imageButton2.setOnClickListener(new MyOnClickListener());
@@ -97,31 +97,31 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View v) {
             switch (v.getId()){
                 case R.id.imageButton_1:
-                    sendSMStoMyMum("1");
+                    sendSMStoMyMum("0");
                     break;
                 case R.id.imageButton_2:
-                    sendSMStoMyMum("2");
+                    sendSMStoMyMum("1");
                     break;
                 case R.id.imageButton_3:
-                    sendSMStoMyMum("3");
+                    sendSMStoMyMum("2");
                     break;
                 case R.id.imageButton_4:
-                    sendSMStoMyMum("4");
+                    sendSMStoMyMum("3");
                     break;
                 case R.id.imageButton_5:
-                    sendSMStoMyMum("5");
+                    sendSMStoMyMum("4");
                     break;
                 case R.id.imageButton_6:
-                    sendSMStoMyMum("6");
+                    sendSMStoMyMum("5");
                     break;
                 case R.id.imageButton_7:
-                    sendSMStoMyMum("7");
+                    sendSMStoMyMum("6");
                     break;
                 case R.id.imageButton_8:
-                    sendSMStoMyMum("8");
+                    sendSMStoMyMum("7");
                     break;
                 case R.id.imageButton_9:
-                    sendSMStoMyMum("9");
+                    sendSMStoMyMum("8");
                     break;
                 default:
                     break;
@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         Toast.makeText(MainActivity.this, "Send to " + editText.getText(), Toast.LENGTH_SHORT).show();
-                        mNumber = "smsto://" + editText.getText().toString();
+                        mNumber = "smsto:" + editText.getText().toString();
                     }
                 })
                 .setNegativeButton("Cancel",
