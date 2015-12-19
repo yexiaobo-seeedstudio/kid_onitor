@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Kid Monitor</string>
+    <string name="action_settings">Setup Phone Number</string>
+</resources>
